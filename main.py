@@ -43,7 +43,7 @@ app.config(bg="black")
 app.iconphoto(False,PhotoImage(file='app icon/icon.png'))
 app.resizable(False,False)
 
-image = Image.open('themes/theme4.jpg')
+image = Image.open('themes/theme1.jpg')
 img = ImageTk.PhotoImage(image)
 img_label =  Label(app,image=img,background="black")
 img_label.pack()
@@ -78,9 +78,7 @@ card4.place(relx=0.5,rely=0.95,anchor=CENTER)
 
 data = screentime()
 end = tm.finished()
-print(start)
-print(end)
-print(data)
+
 
 db.insert([start,end,data])
 
