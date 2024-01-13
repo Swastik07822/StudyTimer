@@ -5,8 +5,8 @@ class Db:
     def __init__(self):
         self.connection = connector.connect(host='localhost',
                   port=3306,user='root',
-                  password='Swastik07@#',
-                  database='swastik')
+                  password='',
+                  database='')
         self.cur = self.connection.cursor()
         #self.cur.execute('create table Screentimehistory (started varchar(10),ended varchar(10),timestamp varchar(10))')
         
