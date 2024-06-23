@@ -57,7 +57,8 @@ db = Db()
 tm = Time()
 start = tm.started()
 history = db.gethistory()
-print(history)
+
+#print(history)
 
 card1 = Canvas(app,height = 35,width=230,bg = 'white')
 card1.create_text(110,15,text= '1. ' + history[-1][0]+'-' + history[-1][1]+str(', ')+'delta:'+history[-1][2],fill='black',font=("Times", "11","bold italic"),anchor=CENTER,justify=CENTER)
